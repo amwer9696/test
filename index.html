@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق إدارة السوبر ماركت</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>تطبيق إدارة السوبر ماركت</h1>
+        <nav>
+            <ul>
+                <li><a href="#inventory">المخزون</a></li>
+                <li><a href="#sales">المبيعات</a></li>
+                <li><a href="#employees">الموظفين</a></li>
+                <li><a href="#reports">التقارير</a></li>
+                <li><a href="#settings">الإعدادات</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inventory">
+            <h2>إدارة المخزون</h2>
+            <button id="add-product">إضافة منتج</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>اسم المنتج</th>
+                        <th>الكمية</th>
+                        <th>السعر</th>
+                        <th>تاريخ الصلاحية</th>
+                        <th>إجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- يتم إضافة المنتجات هنا -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="sales">
+            <h2>المبيعات</h2>
+            <button id="record-sale">تسجيل بيع</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>المنتج</th>
+                        <th>الكمية</th>
+                        <th>السعر الكلي</th>
+                        <th>تاريخ البيع</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- يتم إضافة المبيعات هنا -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="employees">
+            <h2>إدارة الموظفين</h2>
+            <button id="add-employee">إضافة موظف</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>اسم الموظف</th>
+                        <th>الوظيفة</th>
+                        <th>الراتب</th>
+                        <th>إجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- يتم إضافة الموظفين هنا -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reports">
+            <h2>التقارير</h2>
+            <button id="generate-report">توليد تقرير</button>
+            <div id="report-output">
+                <!-- يظهر التقرير هنا -->
+            </div>
+        </section>
+
+        <section id="settings">
+            <h2>الإعدادات</h2>
+            <form>
+                <label for="currency">العملة:</label>
+                <input type="text" id="currency" name="currency">
+                <button type="submit">حفظ الإعدادات</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
